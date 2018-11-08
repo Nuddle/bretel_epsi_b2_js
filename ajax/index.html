@@ -1,0 +1,61 @@
+ <!DOCTYPE html>
+ <html>
+ <head>
+ 		<meta charset="UTF-8">
+ 		<title></title>
+		<link rel="stylesheet" href="https://unpkg.com/leaflet@1.2.0/dist/leaflet.css"
+   integrity="sha512-M2wvCLH6DSRazYeZRIm1JnYyh22purTM+FDB5CsyxtQJYeKq83arPe5wgbNmcFXGqiSH2XR8dT/fJISVA1r/zQ=="
+   crossorigin=""/>
+	<script src="https://unpkg.com/leaflet@1.2.0/dist/leaflet.js"
+   integrity="sha512-lInM/apFSqyy1o6s89K4iQUKg6ppXEgsVxT35HbzUupEVRh2Eu9Wdl4tHj7dZO0s1uvplcYGmt3498TtHq+log=="
+   crossorigin=""></script>
+ 		<link rel="stylesheet" type="text/css" href="style.css">
+ </head>
+ <body onlaod()="">
+ 	<div id="mapid"></div>
+	<script type="text/javascript">
+
+		var mymap = L.map('mapid').setView([ 48.851291, 2.345658], 12);
+
+    L.tileLayer('http://{s}.tile.osm.org/{z}/{x}/{y}.png', {
+     attribution: '&copy; <a href="http://osm.org/copyright">OpenStreetMap</a> contributors'
+  }).addTo(mymap)
+
+	var marker;
+	var lat;
+	var long;
+	var  desc;
+
+
+	function drawPopup(long,lat,desc){
+
+		marker = L.marker([long,lat]).addTo(mymap);
+		marker.bindPopup(desc).openPopup();
+	}
+
+	function loadOpenData(){
+		var xhttp = new XMLHttpRequest();
+		xhttp.onreadystatechange = function() {
+ 		if (this.readyState == 4 && this.status == 200) {
+					 		var  dataset=JSON.parse(this.responseText);
+					  		var i;
+ 							for  (i in dataset.records)
+ 							{
+ 									var addr= dataset.records[i].fields.adresse;
+ 									var lat=  dataset.records[i].geometry.coordinates[0];
+ 									var long=dataset.records[i].geometry.coordinates[1];
+ 									drawPopup(long,lat,addr);
+ 							}
+					  }
+	};
+	xhttp.open("GET", "https://opendata.paris.fr//api/records/1.0/search/?dataset=etablissements-scolaires", true);
+	xhttp.send();
+}
+</script>
+
+<button onclick="drawPopup(48.854,2.814,'ceci est un test')"> LOAD TEST </button>
+<button onclick="loadOpenData()"> LOAD DATA </button>
+
+
+ </body>
+ </html>
