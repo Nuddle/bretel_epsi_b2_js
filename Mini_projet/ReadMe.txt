@@ -8,4 +8,4 @@ Pour accéder au système de notation, aller sur votre navigateur, et tapez loca
 
 Pour accéder au système de visualisation des résultats, aller sur votre navigateur, et tapez localhost:3000/workshop?name=seeRank
 
-Des boutons de raccourcis sont présent dans la barre de navigatio
+Des boutons de raccourcis sont présent dans la barre de navigation
