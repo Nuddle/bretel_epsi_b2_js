@@ -38,7 +38,11 @@ function getData(){
     }
     var campusJSON = JSON.stringify(campus)
 
-    var xhttp = new XMLHttpRequest
+    var xhttp = new XMLHttpRequest()
+    xhttp.open("POST","http://localhost:3000")
+    xhttp.setRequestHeader("Content-Type", "application/json")
+    xhttp.setRequestHeader("Access-Control-Allow-Origin", "*")
+    xhttp.send(campusJSON)
   }
   else{
     alert("Veuillez rentrez des valeurs valables ")

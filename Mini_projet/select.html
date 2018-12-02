@@ -13,304 +13,305 @@
       </button>
       <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
         <div class="navbar-nav">
-          <a class="nav-item nav-link" href="select.html">Sélectionner</a>
-          <a class="nav-item nav-link" href="seeRank.html">Voir</a>
+          <a class="nav-item nav-link" href="http://localhost:3000/workshop?name=notation">Sélectionner</a>
+          <a class="nav-item nav-link" href="http://localhost:3000/workshop?name=seeRank">Voir</a>
         </div>
       </div>
     </nav>
-    <form action="index.html" method="post">
-      <div class="container" id="select">
-        <h3 class="text-center my-4">Sélectionnez votre campus</h3>
-        <div class="row">
-          <div class="col-sm-4">
-            <div class="card m-4">
-              <a style="text-decoration:none;" onclick="getCurrentCampus('Paris') ;show()">
-                <img class="card-img-top" src="http://localhost:3000/Paris-epsi.jpg" alt="Card image cap">
-                <div class="card-body">
-                  <h5 class="card-text text-center">Paris</h5>
-                </div>
-              </a>
-            </div>
+    <div class="container" id="select">
+      <h3 class="text-center my-4">Sélectionnez votre campus</h3>
+      <div class="row">
+        <div class="col-sm-4">
+          <div class="card m-4">
+            <a style="text-decoration:none;" onclick="getCurrentCampus('Paris') ;show()">
+              <img class="card-img-top" src="http://localhost:3000/Paris-epsi.jpg" alt="Card image cap">
+              <div class="card-body">
+                <h5 class="card-text text-center">Paris</h5>
+              </div>
+            </a>
           </div>
-          <div class="col-sm-4">
-            <div class="card m-4">
-              <a style="text-decoration:none;" onclick="getCurrentCampus('Lyon') ; show()">
-                <img class="card-img-top" src="http://localhost:3000/Lyon-epsi.jpeg" alt="Card image cap">
-                <div class="card-body">
-                  <h5 class="card-text text-center">Lyon</h5>
-                </div>
-              </a>
-            </div>
+        </div>
+        <div class="col-sm-4">
+          <div class="card m-4">
+            <a style="text-decoration:none;" onclick="getCurrentCampus('Lyon') ; show()">
+              <img class="card-img-top" src="http://localhost:3000/Lyon-epsi.jpeg" alt="Card image cap">
+              <div class="card-body">
+                <h5 class="card-text text-center">Lyon</h5>
+              </div>
+            </a>
           </div>
-          <div class="col-sm-4">
-            <div class="card m-4">
-              <a href="rank.html" style="text-decoration:none;" onclick="getCurrentCampus('Montpellier') ; show()">
-                <img class="card-img-top" style="max-height:500px;" src="http://localhost:3000/Montpellier-epsi.jpg" alt="Card image cap">
-                <div class="card-body">
-                  <h5 class="card-text text-center">Montpellier</h5>
-                </div>
-              </a>
-            </div>
+        </div>
+        <div class="col-sm-4">
+          <div class="card m-4">
+            <a style="text-decoration:none;" onclick="getCurrentCampus('Montpellier') ; show()">
+              <img class="card-img-top" style="max-height:500px;" src="http://localhost:3000/Montpellier-epsi.jpg" alt="Card image cap">
+              <div class="card-body">
+                <h5 class="card-text text-center">Montpellier</h5>
+              </div>
+            </a>
           </div>
-          <div class="col-sm-4">
-            <div class="card m-4">
-              <a style="text-decoration:none;" onclick="getCurrentCampus('Arras') ; show()">
-                <img class="card-img-top" src="http://localhost:3000/Arras-epsi.jpg" alt="Card image cap">
-                <div class="card-body">
-                  <h5 class="card-text text-center">Arras</h5>
-                </div>
-              </a>
-            </div>
+        </div>
+        <div class="col-sm-4">
+          <div class="card m-4">
+            <a style="text-decoration:none;" onclick="getCurrentCampus('Arras') ; show()">
+              <img class="card-img-top" src="http://localhost:3000/Arras-epsi.jpg" alt="Card image cap">
+              <div class="card-body">
+                <h5 class="card-text text-center">Arras</h5>
+              </div>
+            </a>
           </div>
-          <div class="col-sm-4">
-            <div class="card m-4">
-              <a style="text-decoration:none;" onclick="getCurrentCampus('Brest') ; show()">
-                <img class="card-img-top" src="http://localhost:3000/Brest-epsi.jpg" alt="Card image cap">
-                <div class="card-body">
-                  <h5 class="card-text text-center">Brest</h5>
-                </div>
-              </a>
-            </div>
+        </div>
+        <div class="col-sm-4">
+          <div class="card m-4">
+            <a style="text-decoration:none;" onclick="getCurrentCampus('Brest') ; show()">
+              <img class="card-img-top" src="http://localhost:3000/Brest-epsi.jpg" alt="Card image cap">
+              <div class="card-body">
+                <h5 class="card-text text-center">Brest</h5>
+              </div>
+            </a>
           </div>
-          <div class="col-sm-4">
-            <div class="card m-4">
-              <a style="text-decoration:none;" onclick="getCurrentCampus('Sens') ; show()">
-                <img class="card-img-top" src="http://localhost:3000/Sens-epsi.jpg" alt="Card image cap">
-                <div class="card-body">
-                  <h5 class="card-text text-center">Sens</h5>
-                </div>
-              </a>
-            </div>
+        </div>
+        <div class="col-sm-4">
+          <div class="card m-4">
+            <a style="text-decoration:none;" onclick="getCurrentCampus('Sens') ; show()">
+              <img class="card-img-top" src="http://localhost:3000/Sens-epsi.jpg" alt="Card image cap">
+              <div class="card-body">
+                <h5 class="card-text text-center">Sens</h5>
+              </div>
+            </a>
           </div>
-          <div class="col-sm-4">
-            <div class="card m-4">
-              <a style="text-decoration:none;" onclick="getCurrentCampus('Bordeaux') ; show()">
-                <img class="card-img-top" src="http://localhost:3000/Bordeaux-epsi.png" alt="Card image cap">
-                <div class="card-body">
-                  <h5 class="card-text text-center">Bordeaux</h5>
-                </div>
-              </a>
-            </div>
+        </div>
+        <div class="col-sm-4">
+          <div class="card m-4">
+            <a style="text-decoration:none;" onclick="getCurrentCampus('Bordeaux') ; show()">
+              <img class="card-img-top" src="http://localhost:3000/Bordeaux-epsi.png" alt="Card image cap">
+              <div class="card-body">
+                <h5 class="card-text text-center">Bordeaux</h5>
+              </div>
+            </a>
           </div>
-          <div class="col-sm-4">
-            <div class="card m-4">
-              <a style="text-decoration:none;" onclick="getCurrentCampus('Grenoble') ; show()">
-                <img class="card-img-top" src="http://localhost:3000/Grenoble-epsi.png" alt="Card image cap">
-                <div class="card-body">
-                  <h5 class="card-text text-center">Grenoble</h5>
-                </div>
-              </a>
-            </div>
+        </div>
+        <div class="col-sm-4">
+          <div class="card m-4">
+            <a style="text-decoration:none;" onclick="getCurrentCampus('Grenoble') ; show()">
+              <img class="card-img-top" src="http://localhost:3000/Grenoble-epsi.png" alt="Card image cap">
+              <div class="card-body">
+                <h5 class="card-text text-center">Grenoble</h5>
+              </div>
+            </a>
           </div>
-          <div class="col-sm-4">
-            <div class="card m-4">
-              <a style="text-decoration:none;" onclick="getCurrentCampus('Lille') ; show()">
-                <img class="card-img-top" src="http://localhost:3000/Lille-epsi.jpg" alt="Card image cap">
-                <div class="card-body">
-                  <h5 class="card-text text-center">Lille</h5>
-                </div>
-              </a>
-            </div>
+        </div>
+        <div class="col-sm-4">
+          <div class="card m-4">
+            <a style="text-decoration:none;" onclick="getCurrentCampus('Lille') ; show()">
+              <img class="card-img-top" src="http://localhost:3000/Lille-epsi.jpg" alt="Card image cap">
+              <div class="card-body">
+                <h5 class="card-text text-center">Lille</h5>
+              </div>
+            </a>
           </div>
-          <div class="col-sm-4">
-            <div class="card m-4">
-              <a style="text-decoration:none;" onclick="getCurrentCampus('Nantes')  show()">
-                <img class="card-img-top" src="http://localhost:3000/Nantes-epsi.jpg" alt="Card image cap">
-                <div class="card-body">
-                  <h5 class="card-text text-center">Nantes</h5>
-                </div>
-              </a>
+        </div>
+        <div class="col-sm-4">
+          <div class="card m-4">
+            <a style="text-decoration:none;" onclick="getCurrentCampus('Nantes') ; show()">
+              <img class="card-img-top" src="http://localhost:3000/Nantes-epsi.jpg" alt="Card image cap">
+              <div class="card-body">
+                <h5 class="card-text text-center">Nantes</h5>
+              </div>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="container" id="rank">
+      <h3 class="text-center my-4">Donnez une note aux campus</h3>
+      <div class="d-flex m-4">
+        <div>
+          <img class="card-img-top" style="width:200px;" src="http://localhost:3000/Paris-epsi.jpg" alt="Card image cap">
+        </div>
+        <div class="my-auto">
+          <div class="card-body">
+            <h5 class="card-title text-left">Paris</h5>
+          </div>
+        </div>
+        <div class="ml-auto my-auto">
+          <div class="input-group">
+            <input id="Paris" name="input" type="text" class="form-control col-4" required>
+            <div class="input-group-append">
+              <span class="input-group-text">/20</span>
             </div>
           </div>
         </div>
       </div>
-      <div class="container" id="rank">
-        <h3 class="text-center my-4">Donnez une note aux campus</h3>
-        <div class="d-flex m-4">
-          <div>
-            <img class="card-img-top" style="width:200px;" src="http://localhost:3000/Paris-epsi.jpg" alt="Card image cap">
-          </div>
-          <div class="my-auto">
-            <div class="card-body">
-              <h5 class="card-title text-left">Paris</h5>
-            </div>
-          </div>
-          <div class="ml-auto my-auto">
-            <div class="input-group">
-              <input id="Paris" name="input" type="text" class="form-control col-4" required>
-              <div class="input-group-append">
-                <span class="input-group-text">/20</span>
-              </div>
-            </div>
+      <div class="d-flex m-4">
+        <div>
+          <img class="card-img-top" style="width:200px;" src="http://localhost:3000/Lyon-epsi.jpeg" alt="Card image cap">
+        </div>
+        <div class="my-auto">
+          <div class="card-body">
+            <h5 class="card-title text-left">Lyon</h5>
           </div>
         </div>
-        <div class="d-flex m-4">
-          <div>
-            <img class="card-img-top" style="width:200px;" src="http://localhost:3000/Lyon-epsi.jpeg" alt="Card image cap">
-          </div>
-          <div class="my-auto">
-            <div class="card-body">
-              <h5 class="card-title text-left">Lyon</h5>
+        <div class="ml-auto my-auto">
+          <div class="input-group">
+            <input id="Lyon" name="input" type="text" class="form-control col-4" required>
+            <div class="input-group-append">
+              <span class="input-group-text">/20</span>
             </div>
           </div>
-          <div class="ml-auto my-auto">
-            <div class="input-group">
-              <input id="Lyon" name="input" type="text" class="form-control col-4" required>
-              <div class="input-group-append">
-                <span class="input-group-text">/20</span>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="d-flex m-4">
-          <div>
-            <img class="card-img-top" style="width:200px;" src="http://localhost:3000/Montpellier-epsi.jpg" alt="Card image cap">
-          </div>
-          <div class="my-auto">
-            <div class="card-body">
-              <h5 class="card-title text-left">Montpellier</h5>
-            </div>
-          </div>
-          <div class="ml-auto my-auto">
-            <div class="input-group">
-              <input id="Montpellier" name="input" type="text" class="form-control col-4" required>
-              <div class="input-group-append">
-                <span class="input-group-text">/20</span>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="d-flex m-4">
-          <div>
-            <img class="card-img-top" style="width:200px;" src="http://localhost:3000/Arras-epsi.jpg" alt="Card image cap">
-          </div>
-          <div class="my-auto">
-            <div class="card-body">
-              <h5 class="card-title text-left">Arras</h5>
-            </div>
-          </div>
-          <div class="ml-auto my-auto">
-            <div class="input-group">
-              <input id="Arras" name="input" type="text" class="form-control col-4" required>
-              <div class="input-group-append">
-                <span class="input-group-text">/20</span>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="d-flex m-4">
-          <div>
-            <img class="card-img-top" style="width:200px;" src="http://localhost:3000/Brest-epsi.jpg" alt="Card image cap">
-          </div>
-          <div class="my-auto">
-            <div class="card-body">
-              <h5 class="card-title text-left">Brest</h5>
-            </div>
-          </div>
-          <div class="ml-auto my-auto">
-            <div class="input-group">
-              <input id="Brest" name="input" type="text" class="form-control col-4" required>
-              <div class="input-group-append">
-                <span class="input-group-text">/20</span>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="d-flex m-4">
-          <div>
-            <img class="card-img-top" style="width:200px;" src="http://localhost:3000/Sens-epsi.jpg" alt="Card image cap">
-          </div>
-          <div class="my-auto">
-            <div class="card-body">
-              <h5 class="card-title text-left">Sens</h5>
-            </div>
-          </div>
-          <div class="ml-auto my-auto">
-            <div class="input-group">
-              <input id="Sens" name="input" type="text" class="form-control col-4" required>
-              <div class="input-group-append">
-                <span class="input-group-text">/20</span>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="d-flex m-4">
-          <div>
-            <img class="card-img-top" style="width:200px;" src="http://localhost:3000/Bordeaux-epsi.png" alt="Card image cap">
-          </div>
-          <div class="my-auto">
-            <div class="card-body">
-              <h5 class="card-title text-left">Bordeaux</h5>
-            </div>
-          </div>
-          <div class="ml-auto my-auto">
-            <div class="input-group">
-              <input id="Bordeaux" name="input" type="text" class="form-control col-4" required>
-              <div class="input-group-append">
-                <span class="input-group-text">/20</span>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="d-flex m-4">
-          <div>
-            <img class="card-img-top" style="width:200px;" src="http://localhost:3000/Grenoble-epsi.png" alt="Card image cap">
-          </div>
-          <div class="my-auto">
-            <div class="card-body">
-              <h5 class="card-title text-left">Grenoble</h5>
-            </div>
-          </div>
-          <div class="ml-auto my-auto">
-            <div class="input-group">
-              <input id="Grenoble" name="input" type="text" class="form-control col-4" required>
-              <div class="input-group-append">
-                <span class="input-group-text">/20</span>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="d-flex m-4">
-          <div>
-            <img class="card-img-top" style="width:200px;" src="http://localhost:3000/Lille-epsi.jpg" alt="Card image cap">
-          </div>
-          <div class="my-auto">
-            <div class="card-body">
-              <h5 class="card-title text-left">Lille</h5>
-            </div>
-          </div>
-          <div class="ml-auto my-auto">
-            <div class="input-group">
-              <input id="Lille" name="input" type="text" class="form-control col-4" required>
-              <div class="input-group-append">
-                <span class="input-group-text">/20</span>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="d-flex m-4">
-          <div>
-            <img class="card-img-top" style="width:200px;" src="http://localhost:3000/Nantes-epsi.jpg" alt="Card image cap">
-          </div>
-          <div class="my-auto">
-            <div class="card-body">
-              <h5 class="card-title text-left">Nantes</h5>
-            </div>
-          </div>
-          <div class="ml-auto my-auto">
-            <div class="input-group">
-              <input id="Nantes" name="input" type="text" class="form-control col-4" required>
-              <div class="input-group-append">
-                <span class="input-group-text">/20</span>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="text-center m-4">
-          <button type="Submit" onclick="getData()" class="col btn btn-outline-warning">Submit</button>
         </div>
       </div>
-    </form>
+      <div class="d-flex m-4">
+        <div>
+          <img class="card-img-top" style="width:200px;" src="http://localhost:3000/Montpellier-epsi.jpg" alt="Card image cap">
+        </div>
+        <div class="my-auto">
+          <div class="card-body">
+            <h5 class="card-title text-left">Montpellier</h5>
+          </div>
+        </div>
+        <div class="ml-auto my-auto">
+          <div class="input-group">
+            <input id="Montpellier" name="input" type="text" class="form-control col-4" required>
+            <div class="input-group-append">
+              <span class="input-group-text">/20</span>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="d-flex m-4">
+        <div>
+          <img class="card-img-top" style="width:200px;" src="http://localhost:3000/Arras-epsi.jpg" alt="Card image cap">
+        </div>
+        <div class="my-auto">
+          <div class="card-body">
+            <h5 class="card-title text-left">Arras</h5>
+          </div>
+        </div>
+        <div class="ml-auto my-auto">
+          <div class="input-group">
+            <input id="Arras" name="input" type="text" class="form-control col-4" required>
+            <div class="input-group-append">
+              <span class="input-group-text">/20</span>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="d-flex m-4">
+        <div>
+          <img class="card-img-top" style="width:200px;" src="http://localhost:3000/Brest-epsi.jpg" alt="Card image cap">
+        </div>
+        <div class="my-auto">
+          <div class="card-body">
+            <h5 class="card-title text-left">Brest</h5>
+          </div>
+        </div>
+        <div class="ml-auto my-auto">
+          <div class="input-group">
+            <input id="Brest" name="input" type="text" class="form-control col-4" required>
+            <div class="input-group-append">
+              <span class="input-group-text">/20</span>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="d-flex m-4">
+        <div>
+          <img class="card-img-top" style="width:200px;" src="http://localhost:3000/Sens-epsi.jpg" alt="Card image cap">
+        </div>
+        <div class="my-auto">
+          <div class="card-body">
+            <h5 class="card-title text-left">Sens</h5>
+          </div>
+        </div>
+        <div class="ml-auto my-auto">
+          <div class="input-group">
+            <input id="Sens" name="input" type="text" class="form-control col-4" required>
+            <div class="input-group-append">
+              <span class="input-group-text">/20</span>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="d-flex m-4">
+        <div>
+          <img class="card-img-top" style="width:200px;" src="http://localhost:3000/Bordeaux-epsi.png" alt="Card image cap">
+        </div>
+        <div class="my-auto">
+          <div class="card-body">
+            <h5 class="card-title text-left">Bordeaux</h5>
+          </div>
+        </div>
+        <div class="ml-auto my-auto">
+          <div class="input-group">
+            <input id="Bordeaux" name="input" type="text" class="form-control col-4" required>
+            <div class="input-group-append">
+              <span class="input-group-text">/20</span>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="d-flex m-4">
+        <div>
+          <img class="card-img-top" style="width:200px;" src="http://localhost:3000/Grenoble-epsi.png" alt="Card image cap">
+        </div>
+        <div class="my-auto">
+          <div class="card-body">
+            <h5 class="card-title text-left">Grenoble</h5>
+          </div>
+        </div>
+        <div class="ml-auto my-auto">
+          <div class="input-group">
+            <input id="Grenoble" name="input" type="text" class="form-control col-4" required>
+            <div class="input-group-append">
+              <span class="input-group-text">/20</span>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="d-flex m-4">
+        <div>
+          <img class="card-img-top" style="width:200px;" src="http://localhost:3000/Lille-epsi.jpg" alt="Card image cap">
+        </div>
+        <div class="my-auto">
+          <div class="card-body">
+            <h5 class="card-title text-left">Lille</h5>
+          </div>
+        </div>
+        <div class="ml-auto my-auto">
+          <div class="input-group">
+            <input id="Lille" name="input" type="text" class="form-control col-4" required>
+            <div class="input-group-append">
+              <span class="input-group-text">/20</span>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="d-flex m-4">
+        <div>
+          <img class="card-img-top" style="width:200px;" src="http://localhost:3000/Nantes-epsi.jpg" alt="Card image cap">
+        </div>
+        <div class="my-auto">
+          <div class="card-body">
+            <h5 class="card-title text-left">Nantes</h5>
+          </div>
+        </div>
+        <div class="ml-auto my-auto">
+          <div class="input-group">
+            <input id="Nantes" name="input" type="text" class="form-control col-4" required>
+            <div class="input-group-append">
+              <span class="input-group-text">/20</span>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="text-center m-4">
+        <a href="http://localhost:3000/workshop?name=seeRank">
+          <button  onclick="getData()" class="col btn btn-outline-warning">Submit</button>
+        <a>
+      </div>
+    </div>
+
 
     <script type="text/javascript" src="http://localhost:3000/workshop?name=js"></script>
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
